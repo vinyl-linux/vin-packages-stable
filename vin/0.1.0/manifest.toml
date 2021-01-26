@@ -1,0 +1,17 @@
+provides = "vin"
+version = "0.1.0"
+checksum = "4ab356c47d556ed7c3aedc713f4c4e555dcfaa5aa9750f38c6ff79d4942be460"
+tarball = "https://github.com/vinyl-linux/vin/archive/0.1.0.tar.gz"
+licence = "bsd-3"
+
+[commands]
+configure = "cd vin-0.1.0 && go get"
+compile = "cd vin-0.1.0 && go build -o vind"
+install = "install -v -m 0755 vin-0.1.0/vind /usr/bin/vind"
+
+[profiles]
+[profiles.default]
+deps = [
+       ["go", ">=1.15.0"],
+       ["grpcurl", ">=1.8.0"],
+]

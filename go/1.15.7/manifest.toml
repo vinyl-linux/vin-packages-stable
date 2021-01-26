@@ -1,0 +1,14 @@
+provides = "go"
+version = "1.15.7"
+checksum = "c8686a66e7786955e2a8eb6d95630bb6369eaacfb269b438e0ccd3a5f188d8d9"
+tarball = "https://golang.org/dl/go1.15.7.linux-amd64.tar.gz"
+licence = "todo"
+
+[commands]
+configure = "echo skip"
+compile = "echo skip"
+install = "install -v -m 0755 go/bin/* /tmp/root/usr/bin/* && install -v -m 0755 go/ /usr/share/"
+
+[profiles]
+[profiles.default]
+deps = []

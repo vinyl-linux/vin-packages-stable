@@ -1,0 +1,14 @@
+provides = "grpcurl"
+version = "1.8.0"
+checksum = "ce8ce6291cc67adc05aab38ae4e6a6be73d5fd9090669c9983f84d232f1e8554"
+tarball = "https://github.com/fullstorydev/grpcurl/releases/download/v1.8.0/grpcurl_1.8.0_linux_x86_64.tar.gz"
+licence = "mit"
+
+[commands]
+configure = "echo skip"
+compile = "echo skip"
+install = "install -v -m 0755 grpcurl /usr/bin/grpcurl"
+
+[profiles]
+[profiles.default]
+deps = []
