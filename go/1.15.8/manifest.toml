@@ -1,0 +1,15 @@
+provides = "go"
+version = "1.15.8"
+checksum = "a0ce95b8ac16092f8a992939eacc1962f16f4c6a2072b2f418ef55afdf3debad"
+tarball = "https://github.com/golang/go/archive/go1.15.8.tar.gz"
+licence = "bsd-style"
+
+[commands]
+workingDir = "go-go1.15.8/src"
+configure = "echo skip"
+compile = "echo skip"
+install = "./all.bash"
+
+[profiles]
+[profiles.default]
+deps = []
