@@ -6,5 +6,5 @@ default: $(provides)/$(version)/manifest.toml
 $(provides)/$(version):
 	mkdir -p $@
 
-$(provides)/$(version)/manifest.toml: .template/manifest.toml $(provides)/$(version)
+$(provides)/$(version)/manifest.toml: .template/manifest.toml.tmpl $(provides)/$(version)
 	.template/render $< > $@
