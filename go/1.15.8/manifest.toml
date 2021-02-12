@@ -5,10 +5,10 @@ tarball = "https://github.com/golang/go/archive/go1.15.8.tar.gz"
 licence = "bsd-style"
 
 [commands]
-workingDir = "go-go1.15.8/src"
+workingDir = "go-go1.15.8"
 configure = "echo skip"
 compile = "echo skip"
-install = "./all.bash"
+install = "{{ .ManifestDir }}/install.sh"
 patches = ["disable-flaky-sync-test.patch", "disable-flaky-gc-test.patch", "fix-setrlimit-hang.patch"]
 
 [profiles]
