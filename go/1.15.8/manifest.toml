@@ -9,6 +9,7 @@ workingDir = "go-go1.15.8/src"
 configure = "echo skip"
 compile = "echo skip"
 install = "./all.bash"
+patches = ["disable-flaky-sync-test.patch", "disable-flaky-gc-test.patch", "fix-setrlimit-hang.patch"]
 
 [profiles]
 [profiles.default]
