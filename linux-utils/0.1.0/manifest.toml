@@ -1,0 +1,15 @@
+provides = "linux-utils"
+version = "0.1.0"
+checksum = "1f211a8da40700d057201756c7d92501ff7eeec94719a4afe4311e97cda943d3"
+tarball = "https://github.com/vinyl-linux/linux-utils/archive/wifi.tar.gz"
+licence = "bsd-3"
+
+[commands]
+workingDir = "linux-utils-wifi"
+configure = "echo skip"
+
+[profiles]
+[profiles.default]
+deps = [
+       ["go", ">=1.15.0"],
+]
