@@ -1,15 +1,11 @@
---- /misc/cgo/test/testdata/issue9400_linux.go.orig      2021-02-12 12:45:02.000000000 +0900
-+++ /misc/cgo/test/testdata/issue9400_linux.go   2021-02-12 12:45:27.000000000 +0900
-@@ -19,9 +19,12 @@
-        "testing"
- 
-        "cgotest/issue9400"
-+       "internal/testenv"
+--- go-go1.15.8/misc/cgo/test/testdata/issue9400_linux.go
++++ go-go1.15.8.new/misc/cgo/test/testdata/issue9400_linux.go
+@@ -22,6 +22,8 @@
  )
  
  func test9400(t *testing.T) {
-+       testenv.SkipFlaky(t, 39857)
++	t.Skip("skipping on vinyl because of lib musl stuff")
 +
-        // We synchronize through a shared variable, so we need two procs
-        defer runtime.GOMAXPROCS(runtime.GOMAXPROCS(2))
+ 	// We synchronize through a shared variable, so we need two procs
+ 	defer runtime.GOMAXPROCS(runtime.GOMAXPROCS(2))
  
