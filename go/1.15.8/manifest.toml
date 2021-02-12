@@ -9,7 +9,7 @@ workingDir = "go-go1.15.8"
 configure = "echo skip"
 compile = "echo skip"
 install = "{{ .ManifestDir }}/install.sh"
-patches = ["disable-flaky-sync-test.patch", "disable-flaky-gc-test.patch", "fix-setrlimit-hang.patch"]
+patches = ["disable-flaky-sync-test.patch", "disable-flaky-gc-test.patch", "fix-setrlimit-hang.patch", "disable-sigsetxid-test.patch"]
 
 [profiles]
 [profiles.default]

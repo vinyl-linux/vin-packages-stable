@@ -1,0 +1,15 @@
+--- /misc/cgo/test/testdata/issue9400_linux.go.orig      2021-02-12 12:45:02.000000000 +0900
++++ /misc/cgo/test/testdata/issue9400_linux.go   2021-02-12 12:45:27.000000000 +0900
+@@ -19,9 +19,12 @@
+        "testing"
+ 
+        "cgotest/issue9400"
++       "internal/testenv"
+ )
+ 
+ func test9400(t *testing.T) {
++       testenv.SkipFlaky(t, 39857)
++
+        // We synchronize through a shared variable, so we need two procs
+        defer runtime.GOMAXPROCS(runtime.GOMAXPROCS(2))
+ 
