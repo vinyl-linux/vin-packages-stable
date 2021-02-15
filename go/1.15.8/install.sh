@@ -9,7 +9,7 @@ mkdir -p "${PREFIX}"/usr/bin "${PREFIX}"/usr/lib/go/bin "${PREFIX}"/usr/share/do
 
 for binary in go gofmt; do
     install -Dm755 bin/"$binary" "${PREFIX}"/usr/lib/go/bin/"$binary"
-    ln -s /usr/lib/go/bin/"$binary" "${PREFIX}"/usr/bin/
+    ln -svf /usr/lib/go/bin/"$binary" "${PREFIX}"/usr/bin/
 done
 
 cp -a pkg lib "${PREFIX}"/usr/lib/go
