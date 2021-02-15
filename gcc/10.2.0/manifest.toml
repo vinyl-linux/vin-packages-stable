@@ -1,0 +1,19 @@
+provides = "gcc"
+version = "10.2.0"
+checksum = "e37c01760098661148e3956545128d88e03a04282bbadc5e9aef085a048a4b23"
+tarball = "https://ftpmirror.gnu.org/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz"
+licence = "gpl"
+
+[commands]
+workingDir = "gcc-10.2.0"
+configure = "./configure {{ .ConfigureFlags }} --prefix=/usr"
+
+[profiles]
+[profiles.default]
+deps = [
+     ["openssl", ">=0"],
+     ["gmp", ">=6.2.1"],
+     ["m4", ">=1.4.18"],
+     ["mpfr", ">=4.1.0"],
+     ["mpc", ">=1.2.1"],
+]

@@ -1,0 +1,13 @@
+provides = "mpc"
+version = "1.2.1"
+checksum = "f967a250c85296a88bf6a2471b74558d89a59fe548e119f6d74fccb7cb73b13e"
+tarball = "https://ftpmirror.gnu.org/mpc/mpc-1.2.1.tar.gz"
+licence = "gpl"
+
+[commands]
+workingDir = "mpc-1.2.1"
+configure = "./configure {{ .ConfigureFlags }} --prefix=/usr"
+
+[profiles]
+[profiles.default]
+deps = []

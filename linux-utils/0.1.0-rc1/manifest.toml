@@ -1,7 +1,7 @@
 provides = "linux-utils"
 version = "0.1.0-rc1"
-checksum = "https://github.com/vinyl-linux/linux-utils/archive/netctl_instability.tar.gz"
-tarball = "a8eb2d31456dba269cbdf7df856e0ed08f379eaf744f9eb8cafe94da521f76cf"
+tarball = "https://github.com/vinyl-linux/linux-utils/archive/netctl_instability.tar.gz"
+checksum = "a8eb2d31456dba269cbdf7df856e0ed08f379eaf744f9eb8cafe94da521f76cf"
 licence = ""
 
 [commands]

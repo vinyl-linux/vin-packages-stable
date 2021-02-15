@@ -1,0 +1,18 @@
+provides = "vinyl-base"
+version = "1.0.0"
+meta = true
+licence = "bsd-3"
+
+[profiles]
+[profiles.default]
+deps = [
+# Always take the latest version of vinyl packages
+     ["vin", ">=0.0.0"],
+     ["linux-utils", ">=0.0.0"],
+
+# Use specific versions of dependencies
+     ["binutils", "2.36.1"],
+     ["coreutils", "8.32"],
+     ["openssl", "1.1.1-i"],
+     ["perl", "5.32.1"],
+]

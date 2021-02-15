@@ -1,0 +1,14 @@
+provides = "binutils"
+version = "2.36.1"
+checksum = "858387a952c34cccb2b1cf67d80d2ef6c378090a89e757e8b96c4a887fe17027"
+tarball = "https://ftpmirror.gnu.org/binutils/binutils-2.36.1.tar.bz2"
+licence = "gpl"
+
+[commands]
+workingDir = "binutils-2.36.1"
+
+[profiles]
+[profiles.default]
+deps = [
+     ["openssl", ">=0"],
+]

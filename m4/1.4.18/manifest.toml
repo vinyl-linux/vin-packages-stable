@@ -1,0 +1,12 @@
+provides = "m4"
+version = "1.4.18"
+checksum = "0e6e4d571893c671a067651652d0e73bd86bd4bec00d28cec445c66cbe90b348"
+tarball = "https://ftpmirror.gnu.org/m4/m4-1.4.18.tar.bz2"
+licence = "gpl"
+
+[commands]
+workingDir = "m4-1.14.8"
+
+[profiles]
+[profiles.default]
+deps = []

@@ -1,0 +1,13 @@
+provides = "mpfr"
+version = "4.1.0"
+checksum = "4a4f80430da49a90d7dac2f7c38a03df55d4658113a7e7ffb8f0b1f60913e161"
+tarball = "https://ftpmirror.gnu.org/mpfr/mpfr-4.1.0.tar.bz2"
+licence = "gpl"
+
+[commands]
+workingDir = "mpfr-4.1.0"
+configure = "./configure {{ .ConfigureFlags }} --prefix=/usr"
+
+[profiles]
+[profiles.default]
+deps = []

@@ -1,0 +1,14 @@
+provides = "coreutils"
+version = "8.32"
+checksum = "87c55b7b98cb5535b85bd4c6ab5ce4c2eef5df2220938d4b24a8ebf55b3218ea"
+tarball = "https://ftpmirror.gnu.org/coreutils/coreutils-8.32.tar.gz"
+licence = "gpl"
+
+[commands]
+workingDir = "coreutils-8.32"
+
+[profiles]
+[profiles.default]
+deps = [
+     ["openssl", ">=0"],
+]

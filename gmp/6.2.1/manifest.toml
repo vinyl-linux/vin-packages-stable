@@ -1,0 +1,15 @@
+provides = "gmp"
+version = "6.2.1"
+checksum = "0fe85921613d9633675b3278b32789e2f358851f50e91773bf4c97bc29d62d0d"
+tarball = "https://ftpmirror.gnu.org/gmp/gmp-6.2.1.tar.bz2"
+licence = "gpl"
+
+[commands]
+workingDir = "gmp-6.2.1"
+configure = "./configure {{ .ConfigureFlags }} --prefix=/usr"
+
+[profiles]
+[profiles.default]
+deps = [
+     ["m4", ">=1.4.18"],
+]

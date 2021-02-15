@@ -1,0 +1,13 @@
+provides = "perl"
+version = "5.32.1"
+checksum = "9e75e6d1267e98e8212c283d823012b9cfe7eb5af5dd5a465623d99b1ba09bbd"
+tarball = "https://www.cpan.org/src/5.0/perl-5.32.1.tar.gz"
+licence = ""
+
+[commands]
+workingDir = "perl-5.32.1"
+configure = "./Configure -des"
+
+[profiles]
+[profiles.default]
+deps = []
