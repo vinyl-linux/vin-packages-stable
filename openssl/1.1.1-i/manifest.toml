@@ -1,5 +1,5 @@
 provides = "openssl"
-version = "1.1.1-i"
+version = "1.1.1"
 checksum = "f25d746d72dd0fa0d15aaf46d1ceda894a13aa8a267cb671ae8fe88f264aa772"
 tarball = "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1i.tar.gz"
 licence = "apache-2.0"

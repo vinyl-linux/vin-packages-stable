@@ -13,7 +13,7 @@ deps = [
 # Use specific versions of dependencies
      ["binutils", "2.36.1"],
      ["coreutils", "8.32"],
-     ["openssl", "1.1.1-i"],
+     ["openssl", "1.1.1"],
      ["perl", "5.32.1"],
      ["util-linux", "2.36.2"],
 ]
