@@ -6,7 +6,7 @@ licence = "gpl"
 
 [commands]
 workingDir = "gcc-10.2.0"
-configure = "./configure {{ .ConfigureFlags }} --prefix=/usr"
+configure = "./configure {{ .ConfigureFlags }} --prefix=/usr --with-tune=generic --enable-cld  --with-linker-hash-style=gnu --disable-libssp --disable-libmpx --disable-libmudflap --disable-libsanitizer --with-pkgversion='Vinyl Linux 10.20.0' --disable-fixed-point  --disable-libstdcxx-pch --disable-nls --disable-werror --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-cloog-backend --enable-languages=c,c++ --with-system-zlib"
 
 [profiles]
 [profiles.default]
