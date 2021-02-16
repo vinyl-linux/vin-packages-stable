@@ -6,7 +6,7 @@ licence = ""
 
 [commands]
 workingDir = "perl-5.32.1"
-configure = "./Configure -des"
+configure = "./Configure -des -Dprefix=/usr"
 
 [profiles]
 [profiles.default]
