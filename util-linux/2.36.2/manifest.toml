@@ -1,0 +1,12 @@
+provides = "util-linux"
+version = "2.36.2"
+checksum = "5095cfe70e1e9e1132ef936ca098575ed5e9ab82ce40643ad11ce397e1d21034"
+tarball = "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.36/util-linux-2.36.2.tar.gz"
+licence = ""
+
+[commands]
+workingDir = "util-linux-2.36.2"
+
+[profiles]
+[profiles.default]
+deps = []

@@ -15,4 +15,5 @@ deps = [
      ["coreutils", "8.32"],
      ["openssl", "1.1.1-i"],
      ["perl", "5.32.1"],
+     ["util-linux", "2.36.2"],
 ]
