@@ -1,0 +1,15 @@
+provides = "vin"
+version = "0.4.1"
+checksum = "adf3e80ea286b43e00bc758c5b657398518d5092d3bc26f874d4352e9a744f62"
+tarball = "https://github.com/vinyl-linux/vin/archive/0.4.1.tar.gz"
+licence = "bsd-3"
+
+[commands]
+workingDir = "vin-0.4.1"
+configure = "echo skip"
+
+[profiles]
+[profiles.default]
+deps = [
+     ["go", ">=1.15.0"],
+]
