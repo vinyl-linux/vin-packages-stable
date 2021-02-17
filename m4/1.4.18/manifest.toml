@@ -5,8 +5,8 @@ tarball = "https://ftpmirror.gnu.org/m4/m4-1.4.18.tar.bz2"
 licence = "gpl"
 
 [commands]
+skipenv = true
 workingDir = "m4-1.4.18"
-skipEnv = true  # don't pollute environment
 configure = "./configure"
 
 [profiles]
