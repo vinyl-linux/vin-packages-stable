@@ -5,7 +5,8 @@ tarball = "https://ftpmirror.gnu.org/m4/m4-1.4.18.tar.bz2"
 licence = "gpl"
 
 [commands]
-workingDir = "m4-1.14.8"
+workingDir = "m4-1.4.18"
+configure = "./configure {{ .ConfigureFlags }} --with-system-zlib"
 
 [profiles]
 [profiles.default]
