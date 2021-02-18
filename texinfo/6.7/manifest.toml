@@ -9,4 +9,6 @@ workingDir = "texinfo-6.7"
 
 [profiles]
 [profiles.default]
-deps = []
+deps = [
+     ["gettext", ">=0"],
+]

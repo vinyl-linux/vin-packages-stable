@@ -1,0 +1,13 @@
+provides = "gettext"
+version = "0.21"
+checksum = "7c8fa9ae52956cff7bfcc63df8ef06f420f8f53b1a85bed0ca64763e403527eb"
+tarball = "https://ftpmirror.gnu.org/gettext/gettext-0.21.tar.gz"
+licence = "gpl"
+
+[commands]
+workingDir = "gettext-0.21"
+configure = "gt_cv_func_printf_posix=yes ./configure {{ .ConfigureFlags }} --prefix=/usr --enable-threads=posix --disable-java --enable-static"
+
+[profiles]
+[profiles.default]
+deps = []
