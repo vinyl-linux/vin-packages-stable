@@ -9,4 +9,6 @@ workingDir = "automake-1.15.1"
 
 [profiles]
 [profiles.default]
-deps = []
+deps = [
+     ["perl", ">=0"],
+]

@@ -12,7 +12,7 @@ configure = "./configure"
 [profiles]
 [profiles.default]
 deps = [
-     ["automake", "1.15.1"],
      ["autoconf", ">=2.71"],
+     ["automake", "1.15.1"],
      ["texinfo", ">=6.7"],
 ]
