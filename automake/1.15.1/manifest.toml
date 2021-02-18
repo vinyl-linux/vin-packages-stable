@@ -1,0 +1,12 @@
+provides = "automake"
+version = "1.15.1"
+checksum = "d46608edbfaf8fd91de697d7065b9a28872108e8b3741ce27c854f196275a9fa"
+tarball = "https://ftpmirror.gnu.org/automake/automake-1.15.1.tar.gz"
+licence = "gpl"
+
+[commands]
+workingDir = "automake-1.15.1"
+
+[profiles]
+[profiles.default]
+deps = []

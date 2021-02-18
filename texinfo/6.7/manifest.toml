@@ -1,0 +1,12 @@
+provides = "texinfo"
+version = "6.7"
+checksum = "35518fc57519e232532a2b5fe00c9d4f81a0aac9a76c4eb8cad718d0c2b1c24b"
+tarball = "https://ftpmirror.gnu.org/texinfo/texinfo-6.7.tar.gz"
+licence = "gpl"
+
+[commands]
+workingDir = "texinfo-6.7"
+
+[profiles]
+[profiles.default]
+deps = []

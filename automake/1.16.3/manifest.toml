@@ -1,0 +1,12 @@
+provides = "automake"
+version = "1.16.3"
+checksum = "220ddc7870102aa6d1bb887572952250f935bc6f5fd49522c573cfbf7e279ccc"
+tarball = "https://ftpmirror.gnu.org/automake/automake-1.16.3.tar.gz"
+licence = "gpl"
+
+[commands]
+workingDir = "automake-1.16.3"
+
+[profiles]
+[profiles.default]
+deps = []
