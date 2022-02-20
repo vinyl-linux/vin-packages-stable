@@ -1,0 +1,14 @@
+provides = "zlib"
+version = "1.2.11"
+checksum = "b7432c2eff11a4d28deb65fa1eaf461d84f8dcb2fcee1cd36b1dcfefb907ac1d"
+tarball = "https://github.com/madler/zlib/archive/refs/tags/v1.2.11.tar.gz"
+licence = "zlib"
+
+[commands]
+workingDir = "zlib-1.2.11"
+configure = "./configure --prefix=/usr --libdir=/lib --shared"
+install = "make install pkgconfigdir=/usr/lib/pkgconfig"
+
+[profiles]
+[profiles.default]
+deps = []

@@ -1,0 +1,14 @@
+provides = "libtommath"
+version = "1.2.0"
+checksum = "def70bb77f8899ed426013cd1f35137306cd4bf0ebdf804eb80d5871f53706e8"
+tarball = "https://github.com/libtom/libtommath/archive/refs/tags/v1.2.0.tar.gz"
+licence = "unlicense"
+
+[commands]
+workingDir = "libtommath-1.2.0"
+configure = "echo nop"
+install = "make install PREFIX=/"
+
+[profiles]
+[profiles.default]
+deps = []
