@@ -1,0 +1,16 @@
+provides = "go"
+version = "1.17.6"
+checksum = "5d6d036145b7af68b4bd317216214d0695feb4eb49b8cdf90e2fe5755b010818"
+tarball = "https://go.dev/dl/go1.17.6.src.tar.gz"
+licence = "bsd-style"
+
+[commands]
+workingDir = "go"
+configure = "echo skip"
+compile = "{{ .ManifestDir }}/build.sh"
+install = "{{ .ManifestDir }}/install.sh"
+patches = ["disable-flaky-sync-test.patch", "disable-flaky-gc-test.patch", "vinyl-id.patch"]
+
+[profiles]
+[profiles.default]
+deps = []
