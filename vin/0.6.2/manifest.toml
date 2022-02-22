@@ -1,0 +1,16 @@
+provides = "vin"
+version = "0.6.2"
+checksum = "06faf7c2c97bbe440c80073da00aac3a07f98c88081501c6f3f4d89064831405"
+tarball = "https://github.com/vinyl-linux/vin/archive/refs/tags/0.6.2.tar.gz"
+licence = "bsd-3"
+
+[commands]
+workingDir = "vin-0.6.2"
+configure = "echo skipping configure"
+service_directory = "99-vind"
+
+[profiles]
+[profiles.default]
+deps = [
+     ["go", ">=1.17.0"],
+]
