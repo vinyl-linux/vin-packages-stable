@@ -3,11 +3,13 @@ version = "2020.81"
 checksum = "6532c693b00c21dde7d5fb4e9e5e4bbb620abffb203e16e2b259f62fdb7d4227"
 tarball = "https://matt.ucc.asn.au/dropbear/releases/dropbear-2020.81.tar.bz2"
 licence = "mit"
+service_directory = "20-dropbear"
 
 [commands]
 workingDir = "dropbear-2020.81"
 configure = "./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-wtmp --disable-lastlog"
 compile = "sh {{ .ManifestDir }}/compile.sh"
+install = "sh {{ .ManifestDir }}/install.sh"
 
 [profiles]
 [profiles.default]
