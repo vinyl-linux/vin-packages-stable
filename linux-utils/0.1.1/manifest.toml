@@ -1,0 +1,14 @@
+provides = "linux-utils"
+version = "0.1.1"
+checksum = "43b063b670f6701321f335722f859f41a518512df541b7f97ebc31a0e51aff67"
+tarball = "https://github.com/vinyl-linux/linux-utils/releases/download/0.1.1/linux-utils-x86_64.tar.bz2"
+licence = "bsd-3"
+
+[commands]
+workingDir = "linux-utils-x86_64"
+configure = "echo skip"
+compile = "echo skip"
+
+[profiles]
+[profiles.default]
+deps = []

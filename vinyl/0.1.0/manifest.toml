@@ -1,0 +1,11 @@
+provides = "vinyl"
+version = "0.1.0"
+meta = true
+
+[profiles]
+[profiles.default]
+deps = [
+     ["vinit", "=0.1.0"],
+     ["vin", "=0.7.0"],
+     ["linux-utils", "=0.1.1"],
+]
