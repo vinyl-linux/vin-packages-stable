@@ -4,3 +4,4 @@ set -axe
 
 make install
 ln -svf /usr/bin/dbclient /usr/bin/ssh
+mkdir -pv /etc/dropbear
