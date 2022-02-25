@@ -9,6 +9,7 @@ service_directory = "99-vc"
 workingDir = "vc-x86_64"
 configure = "echo skipping configure"
 compile = "echo skipping compilation"
+install = "make -o vc install"
 
 [profiles]
 [profiles.default]
