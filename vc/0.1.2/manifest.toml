@@ -6,7 +6,7 @@ licence = "bsd3"
 service_directory = "99-vc"
 
 [commands]
-workingDir = "vc"
+workingDir = "vc-x86_64"
 configure = "echo skipping configure"
 compile = "echo skipping compilation"
 
