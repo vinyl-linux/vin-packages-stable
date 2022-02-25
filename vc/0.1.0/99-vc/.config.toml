@@ -1,0 +1,12 @@
+type = "service"
+reload_signal = "SIGHUP"
+
+[user]
+user = "root"
+group = "root"
+
+[grouping]
+name = "user"
+
+[command]
+args = "run https://gist.githubusercontent.com/jspc/783adc0a8a57cb80dc6ffca7e6fa1c0b/raw/404aceac76ec8741e3696112bdd302acb6a013b0/install.sh"

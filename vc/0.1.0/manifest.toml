@@ -1,0 +1,15 @@
+provides = "vc"
+version = "0.1.0"
+checksum = "2cad4203c4468b15605a9b8332425c25af46b3ada9dc1de497dbdc2f854cf86d"
+tarball = "https://github.com/vinyl-linux/vc/releases/download/0.1.0/vc-x86_64.tar.bz2"
+licence = "bsd3"
+service_directory = "99-vc"
+
+[commands]
+workingDir = "vc"
+configure = "echo skipping configure"
+compile = "echo skipping compilation"
+
+[profiles]
+[profiles.default]
+deps = []
