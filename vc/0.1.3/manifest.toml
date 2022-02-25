@@ -1,0 +1,16 @@
+provides = "vc"
+version = "0.1.3"
+checksum = "9667c2784d33206499bb8f78df56e9aecf74da192332213441ca822696ca363f"
+tarball = "https://github.com/vinyl-linux/vc/releases/download/0.1.3/vc-x86_64.tar.bz2"
+licence = "bsd3"
+service_directory = "99-vc"
+
+[commands]
+workingDir = "vc-x86_64"
+configure = "echo skipping configure"
+compile = "echo skipping compilation"
+install = "make -o vc install"
+
+[profiles]
+[profiles.default]
+deps = []
