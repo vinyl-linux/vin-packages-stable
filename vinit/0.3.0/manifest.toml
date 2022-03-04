@@ -1,0 +1,15 @@
+provides = "vinit"
+version = "0.3.0"
+checksum = "15c588a75a8fdffc30c9d58adf9598cf33635a0ac1eb2f0d69345f90b86c8ac6"
+tarball = "https://github.com/vinyl-linux/vinit/releases/download/0.3.0/vinit-x86_64.tar.bz2"
+licence = "bsd-3"
+
+[commands]
+workingDir = "vinit-x86_64"
+configure = "echo skip"
+compile = "make certs/server-cert.pem"
+install = "sh {{ .ManifestDir }}/install.sh"
+
+[profiles]
+[profiles.default]
+deps = []
