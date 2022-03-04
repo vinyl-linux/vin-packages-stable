@@ -10,3 +10,5 @@ name = "user"
 
 [command]
 args = "run /etc/vinyl/stage-1.toml"
+
+[oneoff]
