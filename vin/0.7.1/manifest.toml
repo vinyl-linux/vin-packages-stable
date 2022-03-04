@@ -1,0 +1,15 @@
+provides = "vin"
+version = "0.7.1"
+checksum = "03fe5a15cb1a38fff25e77420a63f3395696d2dcee6e39dec70c6b840fb9222a"
+tarball = "https://github.com/vinyl-linux/vin/releases/download/0.7.1/vin-linux-x86_64.tar.bz2"
+licence = "bsd-3"
+service_directory = "99-vind"
+
+[commands]
+workingDir = "vin-linux-x86_64"
+configure = "echo skipping configure"
+compile = "./vin advise"
+install = "sh {{ .ManifestDir }}/install.sh"
+
+[profiles]
+[profiles.default]
