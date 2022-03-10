@@ -1,0 +1,14 @@
+provides = "udev-vinit"
+version = "1.0.0"
+checksum = "3e767181b1a035d296bf393e35c65441bb0158141a0cfb51cf389b60ab01e8be"
+tarball = "https://github.com/vinyl-linux/vin/releases/download/0.10.1/empty.tar.gz"
+
+[commands]
+configure = "true"
+compile = "true"
+install = "true"
+service_directory = "15-udev"
+
+[profiles]
+[profiles.default]
+deps = []
