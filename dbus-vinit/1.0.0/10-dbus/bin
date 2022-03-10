@@ -1,1 +1,7 @@
-/usr/bin/dbus-daemon
+#!/usr/bin/env bash
+#
+set -axe
+
+[ -f /run/dbus/dbus.pid ] && rm /run/dbus/dbus.pid || true
+
+exec /usr/bin/dbus-daemon ${@}
