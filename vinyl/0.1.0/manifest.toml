@@ -5,7 +5,7 @@ meta = true
 [profiles]
 [profiles.default]
 deps = [
-     ["vinit", "=0.7.0"],
+     ["vinit", "=0.8.0-rc1"],
      ["vin", "=0.12.1"],
      ["linux-utils", "=0.1.1"],
      ["vc", "=0.3.2"],
